@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sample Tasks | Pete Tribo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="works.html">Works</a></li>
+    <li class="dropdown">
+      <a href="#" id="ojtToggle">OJT Experience ▾</a>
+
+      
+      <div class="dropdown-content">
+        <a href="about-hte.html">About HTE</a>
+        <a href="sample-tasks.html">Sample Tasks</a>
+        <a href="documentation.html">Documentation</a>
+      </div>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="section-title">Sample Tasks</section>
+
+  <section class="tasks-grid">
+
+    <div class="task-card"
+      data-title="Laptop Quality Assurance"
+      data-image="file:///E:/TRIBO%20OJT/Assets/laptop.jpg"
+      data-description="
+      -Physical testing
+      -Basic Setup
+      -RAM Installation"
+      onclick="openModal(this)">
+      <img src="file:///E:/TRIBO%20OJT/Assets/laptop.jpg" alt="">
+      <div class="task-desc"><p>Laptop Quality Assurance</p></div>
+    </div>
+
+    <div class="task-card"
+      data-title="Desktop Testing and Component Installations"
+      data-image="file:///E:/TRIBO%20OJT/Assets/desktop.jpg"
+      data-description="
+      -Basic Setups
+      -Physical testing
+      -Component Installations"
+      onclick="openModal(this)">
+      <img src="file:///E:/TRIBO%20OJT/Assets/desktop.jpg" alt="">
+      <div class="task-desc"><p>Desktop Quality Assurance</p></div>
+    </div>
+
+    <div class="task-card"
+      data-title="Tablet Quality Assurance"
+      data-image="file:///E:/TRIBO%20OJT/Assets/Tablet.jpg"
+      data-description=" 
+      - Functionality Check
+      - Wi-Fi MAC Address Recording
+      - Serial Number Documentation"
+      onclick="openModal(this)">
+      <img src="file:///E:/TRIBO%20OJT/Assets/Tablet.jpg" alt="">
+      <div class="task-desc"><p>Tablet Quality Assurance</p></div>
+    </div>
+
+    <div class="task-card"
+      data-title="Digital Signage Assurance Testing"
+      data-image="file:///E:/TRIBO%20OJT/Assets/DigitalS.jpg"
+      data-description="
+      - Physical Checks
+      - Basic Setup
+      - Display testing"
+      onclick="openModal(this)">
+      <img src="file:///E:/TRIBO%20OJT/Assets/DigitalS.jpg" alt="">
+      <div class="task-desc"><p>Digital Signage Assurance Testing</p></div>
+    </div>
+
+    <div class="task-card"
+      data-title="All in One Assurance Testing"
+      data-image="file:///E:/TRIBO%20OJT/Assets/AllinOne.jpg"
+      data-description="
+      - Physical Checks
+      - Functionality Verification
+      - Basic Setup and Configuration"
+      onclick="openModal(this)">
+      <img src="file:///E:/TRIBO%20OJT/Assets/AllinOne.jpg" alt="">
+      <div class="task-desc"><p>All in one Assurance Testing</p></div>
+    </div>
+
+    <div class="task-card"
+      data-title="Server Testing and Configuration"
+      data-image="file:///E:/TRIBO%20OJT/Assets/server.jpg"
+      data-description="
+      - Server Installation
+      - Configuration"
+      onclick="openModal(this)">
+      <img src="file:///E:/TRIBO%20OJT/Assets/server.jpg" alt="">
+      <div class="task-desc"><p>Server Quality Assurance</p></div>
+    </div>
+
+  </section>
+</main>
+
+<!-- MODAL -->
+<div class="modal" id="taskModal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">×</span>
+    <h2 id="modalTitle"></h2>
+    <img id="modalImage" src="" alt="">
+    <p id="modalDescription"></p>
+  </div>
+</div>
+
+<footer>© 2025 <b>Pete Tribo</b>. All rights reserved.</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>

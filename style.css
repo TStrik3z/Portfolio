@@ -1,0 +1,430 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#2f2f2f;color:#eaeaea}
+a{text-decoration:none;color:inherit}
+
+
+:root{
+--yellow:#f1c40f;
+--dark:#1f1f1f;
+--gray:#3a3a3a;
+}
+
+
+/* NAVBAR */
+nav{display:flex;justify-content:center;background:var(--dark);padding:18px 0}
+nav ul{list-style:none;display:flex;gap:35px;align-items:center}
+nav li{position:relative}
+nav a{font-weight:500}
+nav a:hover,.active{color:var(--yellow)}
+
+
+/* DROPDOWN */
+.dropdown-content{display:none;position:absolute;top:30px;left:0;background:#2b2b2b;border-radius:6px;min-width:170px}
+.dropdown-content a{display:block;padding:10px 15px}
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+
+/* SECTIONS */
+section{padding:70px 90px}
+.section-title{text-align:center;color:var(--yellow);font-size:28px;margin-bottom:40px}
+
+
+/* HOME */
+.home{display:flex;justify-content:space-between;align-items:center}
+.home-text{max-width:1000px}
+.home-text h1{font-size:65px;margin-bottom:15px}
+.home-text p{font-size:25px;margin-bottom:15px}
+.home-text p{line-height:1.7}
+
+
+.profile-pic{width:350px;height:350px;border-radius:50%;border:5px solid var(--yellow);overflow:hidden}
+.profile-pic img{width:100%;height:100%;object-fit:cover}
+
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.about-box h3{color:var(--yellow);margin-bottom:10px}
+.about-box ul{line-height:1.9}
+
+
+.education{margin-top:50px}
+.edu-card{background:#7a7a7a;color:#111;padding:20px;border-radius:25px;margin-bottom:20px}
+.edu-card h4{color:#222}
+
+
+.about-box h3 {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+  
+  .about-box ul {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+  
+  .about-box li {
+    margin-left: 18px;
+  }
+
+  .about-image {
+    margin-left: 35%;
+    margin-top: -5%; 
+  }
+  
+
+
+/* WORKS */
+.works-grid{display:flex;gap:40px;justify-content:center}
+.work-card{width:260px;background:#d9d9d9;color:#222;border-radius:20px;overflow:hidden}
+.work-card img{width:100%;height:150px;object-fit:cover}
+.work-card .desc{padding:15px;font-size:14px}
+.work-card:hover{outline:3px solid var(--yellow)}
+
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+input,textarea{width:100%;padding:12px;border:none;border-radius:8px;margin-bottom:15px}
+button{padding:12px 30px;border:none;border-radius:8px;background:var(--yellow);font-weight:600;cursor:pointer}
+
+
+.contact-info{background:#262626;padding:30px;border-radius:15px}
+
+
+/* FOOTER */
+footer{text-align:left;padding:20px 60px;background:var(--dark);margin-top:60px;font-weight:600}
+</style>
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* pushes footer down */
+}
+
+footer {
+  background: #1f1f1f;
+  padding: 20px 60px;
+}
+
+
+/* =========================
+   ABOUT HTE PAGE
+========================= */
+
+.hte {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+  
+  .hte h1 {
+    color: var(--yellow);
+    font-size: 45px;
+    margin-bottom: 25px;
+  }
+  
+  .hte-description {
+    max-width: 800px;
+    line-height: 1.8;
+    margin-bottom: 70px;
+  }
+
+  .hte h1,
+.hte-description {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+  /* Mission / Vision Grid */
+  .hte-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px 60px;
+    align-items: center;
+  }
+  
+  /* Text Blocks */
+  .hte-block h2 {
+    color: var(--yellow);
+    margin-bottom: 15px;
+  }
+  
+  .hte-block p {
+    line-height: 1.8;
+  }
+  
+  /* Image Styling */
+  .hte-image {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hte-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid var(--yellow);
+    object-fit: cover;
+  }
+
+  .hte-block h2 {
+    font-size: 28px; /* section titles */
+  }
+  
+  .hte-block p {
+    font-size: 18px; /* main text */
+    line-height: 1.9;
+  }
+  
+  /* SAMPLE TASKS GRID */
+.tasks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px 90px;
+  }
+  
+  .task-card {
+    background: #d9d9d9;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .task-card:hover {
+    transform: translateY(-6px);
+    outline: 3px solid var(--yellow);
+  }
+  
+  .task-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .task-desc {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* MODAL */
+  .modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background: #d9d9d9;
+    color: #333;
+    width: 420px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+  }
+  
+  .modal-content h2 {
+    padding: 15px;
+    background: #cfcfcf;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+  .modal-content p {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+
+  /* DOCUMENTATION GRID */
+.docs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px 90px;
+  }
+  
+  .doc-card {
+    background: #d9d9d9;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  .doc-card h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #111;
+  }
+  
+  .doc-card button {
+    padding: 6px 22px;
+    border-radius: 20px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* DOCUMENT MODAL */
+  .doc-modal-content {
+    background: #cfcfcf;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+  }
+  
+  .doc-modal-content img {
+    width: 500px;
+    max-width: 90vw;
+    border-radius: 10px;
+  }
+  
+  /* DOWNLOAD BUTTON */
+  #downloadBtn {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    font-size: 22px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  /* ===== DOCUMENT MODAL ===== */
+  
+
+  .modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Modal box */
+  .doc-modal-content {
+    position: relative;
+    background: #d9d9d9;
+    padding: 20px 20px 10px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow: hidden;
+  }
+  
+  /* Scroll container */
+  .doc-modal-body {
+    max-height: 75vh;
+    overflow-y: auto;
+    padding-top: 40px;
+  }
+  
+  /* Document images */
+  .doc-preview {
+    width: 100%;
+    max-width: 650px;   /* 👈 CONTROLS ZOOM */
+    height: auto;
+    display: block;
+    margin: 0 auto 25px;
+    object-fit: contain;
+  }
+  
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 32px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 10;
+    color: #000;
+  }
+  
+  /* Download button */
+  #downloadBtn {
+    position: absolute;
+    top: 12px;
+    right: 50px;
+    z-index: 10;
+  }
+  
+  #downloadBtn img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+  }
+
+  .doc-modal-body iframe {
+    border-radius: 8px;
+    background: #fff;
+  }
+  
+  
+  
+  
+  
+  /* ===== NAVBAR DROPDOWN ARROW ===== */
+
+#ojtToggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  #ojtToggle .arrow {
+    transition: transform 0.2s ease;
+    font-size: 12px;
+  }
+  
+  /* Arrow when OPEN */
+  #ojtToggle.open .arrow {
+    transform: rotate(180deg); 
+  }
+
+  
+  
+  
+  
+
+  
